@@ -1,4 +1,7 @@
 # Robot Path Planning
-This is a project on Robot path planning by Shikha Bhat and Astitva Sehgal. 
-We will implement many algorithms, not that you care that much, but yeah. 
 
+## Aim:
+To implement and test path planning algorithms like RRT(Rapidly exploring Random Trees), PRM(Probabilistic Road Map), Potential Field using python and matplotlib.
+
+## Team:
+Astitva Sehgal and Shikha Bhat
