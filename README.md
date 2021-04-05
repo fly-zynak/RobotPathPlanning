@@ -1,7 +1,7 @@
 # Robot Path Planning
 The robotic path planning problem is a classic. A robot, with certain dimensions, is attempting to navigate between point A and point B while avoiding the set of all obstacles. The robot is able to move through the open area, which is not necessarily discretized.
 
-## Aim:
+## Aim
 To implement and test path planning algorithms like RRT(Rapidly exploring Random Trees), PRM(Probabilistic Road Map), Potential Field using python and matplotlib.
 
 ## Implementation
@@ -13,6 +13,6 @@ Check out the Jupyter notebook with RRT implementation [here](https://github.com
 
 ![RRT](https://github.com/fly-zynak/RobotPathPlanning/blob/main/Images/RRT.png)
 
-## Team:
+## Team
 Astitva Sehgal and Shikha Bhat
 
