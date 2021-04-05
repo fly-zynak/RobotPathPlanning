@@ -1,5 +1,5 @@
 # Robot Path Planning
-The robotic path planning problem is a classic. A robot, with certain dimensions, is attempting to navigate between point A and point B while avoiding the set of all obstacles. The robot is able to move through the open area, which is not necessarily discretized.
+The robotic path planning problem is a classic. A robot is attempting to navigate its path from the start point to a specified goal region, while avoiding the set of all obstacles.
 
 ## Aim
 To implement and test path planning algorithms like RRT(Rapidly exploring Random Trees), PRM(Probabilistic Road Map), Potential Field using python and matplotlib.
