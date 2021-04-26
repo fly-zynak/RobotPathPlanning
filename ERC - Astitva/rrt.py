@@ -46,7 +46,7 @@ class node():
         self.ch = []
         if ch is not None:
             for child in ch:
-                self.add_child(child)
+                self.add(child)
         self.par = par
 
     def __str__(self):
@@ -180,6 +180,9 @@ def RRT(start,goal,obstacle_list):
 	root = node((xs,ys)) 		#starting node of tree
 	last = root					#last is the last node of the tree till now
 	ac = 0
+	#------------
+	
+
 
 	#---------
 
@@ -287,7 +290,11 @@ def RRT(start,goal,obstacle_list):
 
 	#TO SEE THE ENTIRE TREE GENERATED, UNCOMMENT THE LINE BELOW
 	#root.pl(0)
-
+	plt.figure(2,figsize=(12,9))
+	#displays a boundary for the environment
+	plt.plot([0-1,xf+1,xf+1,0-1,0-1],[0-1,0-1,yf+1,yf+1,0-1],"y-")
+	#displays the goal region 
+	plt.plot([xe-0.1,xe+0.1,xe+0.1,xe-0.1,xe-0.1],[ye-0.1,ye-0.1,ye+0.1,ye+0.1,ye-0.1],"b")
 
 	#return statement to return pathup
 	
@@ -333,6 +340,16 @@ def visualize(path,obstacle_list):
 
 	#plotting the path
 	plt.plot(pathx,pathy,"b.-")
+
+	#---------
+	#plot the start situation
+	plt.figure(2,figsize=(12,9))
+
+	
+	for i in range(num):
+	    pol = p[i]
+	    x,y = pol.exterior.xy
+	    plt.plot(x,y,"g.-")
 
 	plt.show()
 
